@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 import javax.sound.sampled.Line;
 
-
 public class Main {
 
     public static void main(String[] args) {
@@ -78,7 +77,10 @@ public class Main {
                         ms.MergeSorting(arr);
                         ms.printArray(arr);
                         return;
-                case 5:
+                case 5:QuickSort qs = new QuickSort();
+                        qs.quickSorting(arr, 0, arr.length-1);
+                        qs.printArray(arr);
+                        return;
                 default:return;
 
             }
